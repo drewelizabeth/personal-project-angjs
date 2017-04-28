@@ -58,11 +58,11 @@ gulp.task('pictures', function() {
 //this watches all the files in the specified locations, if any files change it will recompile
 //This wont watch newly created files while gulp is running, if you make a new file stop gulp with ctrl-c and re-run.
 gulp.task('watch', function() {
-    gulp.watch(paths.jsSource, ['js']);
-    gulp.watch(paths.sassSource, ['sass']);
-    gulp.watch(paths.indexSource, ['index']);
-    gulp.watch(paths.viewsSource, ['views']);
-    gulp.watch(paths.picturesSource, ['pictures']);
+    gulp.watch('./development/js/**/*.js', ['js']);
+    gulp.watch('./development/styles/**/*.scss', ['sass']);
+    gulp.watch('./development/index.html', ['index']);
+    gulp.watch('./development/views/**/*.html', ['views']);
+    gulp.watch('./development/pictures/**/*', ['pictures']);
 });
 
 //when you type gulp and run it in the command like this is the default task that runs.
