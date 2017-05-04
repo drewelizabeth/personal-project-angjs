@@ -1,0 +1,59 @@
+.home-page-top-section {
+  width: 100%;
+  height: 8vh;
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  .fixed-nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+  }
+  header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: lightgreen;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    nav {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      font-size: 15px;
+      font-weight: 100;
+      color: white;
+      li {
+        list-style: none;
+      }
+    }
+  }
+}
+
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.intro-image-box {
+  width: 100%;
+  height: 40vh;
+  margin-top: 30px;
+  background: url('http://theircvillage.com/wp-content/uploads/2014/04/green_village.jpg?w=240') no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .intro-image-text {
+    background-color: red;
+}
+}
+
+
