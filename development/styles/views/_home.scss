@@ -1,7 +1,7 @@
-body {
-  width: 100%;
-  height: 100%;
-}
+// body {
+//   width: 100%;
+//   height: 100%;
+// }
 
 .home-page-top-section {
   width: 100%;
@@ -77,10 +77,17 @@ body {
 }
 
 .right {
-  padding: 30% 10% 30% 70%;
+  padding: 29% 10% 29% 70%;
   background-position: 0% 50%;
   overflow: hidden;
 }
+
+.left {
+  padding: 30% 70% 30% 10%;
+  background-position: 100% 50%;
+  overflow: hidden;
+}
+
 .village-image {
   background-image: url('http://theircvillage.com/wp-content/uploads/2014/04/green_village.jpg?w=240');
 }
@@ -111,18 +118,38 @@ body {
   }
 }
 
-.calendar-meals {
-  width: 100%;
-  height: 100vh;
-  background-color: pink;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+// .calendar-meals {
+//   width: 100%;
+//   height: 100vh;
+//   background-color: pink;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+// }
 
 .parall-img1 {
   background-image: url('https://images.pexels.com/photos/35666/cooking-baby-only-kitchen.jpg?w=940&h=650&auto=compress&cs=tinysrgb');
+}
+
+.parall-img2 {
+  background-size: 60% 100%;
+  background-image: url('http://cdn.images.express.co.uk/img/dynamic/78/590x/Baby-598182.jpg');
+}
+
+.parall-img3 {
+  background-size: 60% 100%;
+  background-image: url('https://images.pexels.com/photos/28111/pexels-photo-28111.jpg?h=350&auto=compress&cs=tinysrgb');
+}
+
+.parall-img4 {
+  background-size: 60% 100%;
+  background-image: url('https://images.pexels.com/photos/361300/pexels-photo-361300.jpeg?h=350&auto=compress&cs=tinysrgb');
+}
+
+.parall-img5 {
+  background-image: url('https://images.pexels.com/photos/220437/pexels-photo-220437.jpeg?h=350&auto=compress&cs=tinysrgb');
+  background-size: 60% 100%;
 }
 
 .align-content {
@@ -150,6 +177,15 @@ body {
 
 .slide {
   background-color: white;
+}
+
+.footer-text {
+  width: 100%;
+  height: 6vh;
+  background-color: lightgreen;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 // @media only screen and (max-device-width: 1024px) {

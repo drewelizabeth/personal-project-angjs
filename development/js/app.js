@@ -9,11 +9,11 @@ angular.module('App', ['ui.router'])
                controller: 'homeCtrl',
                url: '/'
            })
-        //    .state('signup', {
-        //        templateUrl:
-        //        controller:
-        //        url:
-        //    })
+           .state('signup', {
+               templateUrl: './views/signup.html',
+               controller: 'signupCtrl',
+               url: '/signup'
+           })
            .state('login', {
                templateUrl: './views/login.html',
                controller: 'loginCtrl',
