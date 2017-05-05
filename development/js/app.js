@@ -5,23 +5,23 @@ angular.module('App', ['ui.router'])
 
        $stateProvider
            .state('home', {
-               templateUrl: '../development/views/home.html',
+               templateUrl: './views/home.html',
                controller: 'homeCtrl',
                url: '/'
            })
-        //    .state('signUp', {
+        //    .state('signup', {
         //        templateUrl:
         //        controller:
         //        url:
         //    })
-        //    .state('logIn' {
-        //        templateUrl:
-        //        controller:
-        //        url:
-        //    })
+           .state('login', {
+               templateUrl: './views/login.html',
+               controller: 'loginCtrl',
+               url: '/login'
+           })
            .state('mom', {
-               templateUrl: '../views/mom.html',
+               templateUrl: './views/mom.html',
                controller: 'momCtrl',
-               url: '/momLogin'
+               url: '/momlogin'
            });
  });
