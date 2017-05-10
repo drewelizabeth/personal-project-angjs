@@ -4,26 +4,26 @@
     <!--navbar-->
     <header>
       <nav>
-        <li><a ui-sref="home">Home</a></li>
-        <li><a ui-sref="signup">Sign Up</a></li>
-        <li><a ui-sref="login">Log In</a></li>
+        <li ui-sref="home">Home</li>
+        <li ui-sref="signup">Sign Up</li>
+        <li ui-sref="login">Log In</li>
       </nav>
     </header>
   </div>
 
-  <div class="intro-image-box">
+  <div class="intro-image-box-login">
     <div class="form-div">
-      <form class="form">
+      <form class="form" ng-submit="login(user)">
         <div class="imgcontainer">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTfQHz5SlajCOKBfq4Jmv1YZXsrOHXXinSv-jXoTnAJ-DPk3fy0wGpxxo" alt="Avatar" class="avatar">
         </div>
 
         <div class="container">
           <label><b>Username</b></label>
-          <input type="text" ng-model="loginUsername" placeholder="Enter Username" required>
+          <input type="text" ng-model="user.username" placeholder="Enter Username" required>
 
           <label><b>Password</b></label>
-          <input type="password" ng-model="loginPassword" placeholder="Enter Password" required>
+          <input type="password" ng-model="user.password" placeholder="Enter Password" required>
 
           <button type="submit">Login</button>
           <input type="checkbox" checked="checked"> Remember me

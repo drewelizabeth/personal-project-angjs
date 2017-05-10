@@ -1,6 +1,16 @@
 
+.intro-image-box-login {
+  width: 100%;
+  height: 100vh;
+  background: url('http://theircvillage.com/wp-content/uploads/2014/04/green_village.jpg?w=240') no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .form-div {
-  width: 70%;
+  width: 55%;
 }
 
 form {
@@ -10,11 +20,13 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-radius: 15px;
 }
 
 .form {
   width: 90%;
   height: 60%;
+  margin-top: 10%;
   display: flex;
   justify-content: center;
 }
@@ -26,6 +38,7 @@ input[type=text], input[type=password] {
     display: flex;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    border-radius: 5px;
 }
 
 button {
@@ -36,6 +49,7 @@ button {
     border: none;
     cursor: pointer;
     width: 100%;
+    border-radius: 5px;
 }
 
 button:hover {
@@ -46,6 +60,7 @@ button:hover {
     width: auto;
     padding: 10px 18px;
     background-color: #f44336;
+    border-radius: 5px;
 }
 
 .imgcontainer {

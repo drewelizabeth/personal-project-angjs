@@ -92,15 +92,15 @@
   background-image: url('http://theircvillage.com/wp-content/uploads/2014/04/green_village.jpg?w=240');
 }
 
-.intro-image-box {
-  width: 100%;
-  height: 95vh;
-  background: url('http://theircvillage.com/wp-content/uploads/2014/04/green_village.jpg?w=240') no-repeat center;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+// .intro-image-box {
+//   width: 100%;
+//   height: 95vh;
+//   background: url('http://theircvillage.com/wp-content/uploads/2014/04/green_village.jpg?w=240') no-repeat center;
+//   background-size: cover;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
 
 .intro-image-text {
   color: white;
@@ -129,6 +129,7 @@
 // }
 
 .parall-img1 {
+    background-size: 60% 100%;
   background-image: url('https://images.pexels.com/photos/35666/cooking-baby-only-kitchen.jpg?w=940&h=650&auto=compress&cs=tinysrgb');
 }
 

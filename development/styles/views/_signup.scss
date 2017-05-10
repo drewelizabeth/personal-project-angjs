@@ -1,0 +1,133 @@
+.village-image-su {
+  background-size: cover;
+  background-image: url('http://theircvillage.com/wp-content/uploads/2014/04/green_village.jpg?w=240');
+}
+
+// .parall-su {
+//   overflow: scroll;
+//   padding-top: 20vh;
+//   padding-bottom: 30vh;
+//   background-attachment: fixed;
+//   background-position: center;
+//   background-repeat: repeat;
+//   background-size: cover;
+// }
+
+// .intro-image-box-su {
+//   width: 100%;
+//   height: 100vh;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+// .village-avatar {
+//   height: 20%;
+//   width: 30%;
+// }
+
+// .sign-up-wrapper {
+//   padding: 16px;  
+// }
+
+// form {
+//     // width: 100%;
+//     border: 3px solid #f1f1f1;
+//     background-color: white;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     border-radius: 15px;
+// }
+
+// .sign-up-form {
+//   width: 90%;
+//   height: 60%;
+//   display: flex;
+//   justify-content: center;
+// }
+
+// .village-image-su2 {
+//   background-image: url('https://s-media-cache-ak0.pinimg.com/736x/25/b0/96/25b096a04c75399b061dfd1d9cb76b23.jpg');
+// }
+// .parall-su2 {
+//   overflow: scroll;
+//   margin-bottom: 0;
+//   padding: 240px 0;
+//   background-position: 0 0;
+// }
+
+.su-full-wrap {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.form-div-su {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.sign-up-form {
+  width: 50%;
+  height: 80vh;
+  margin-bottom: 5vh;
+  display: flex;
+  justify-content: center;
+  // margin: 100px;
+  overflow-y: scroll;
+}
+
+input[type=date], input[type=number], input[type=radio] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: flex;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.sign-up-wrapper {
+  padding: 30px;
+  padding-top: 15px;
+  overflow-y: scroll; 
+}
+
+.imgcontainer-su {
+  width: 100%;
+  height: 20vh;
+  // margin-top: 60vh;
+  // margin-left: 35%;
+  // justify-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.village-avatar {
+  height: 100%;
+  width: 60%;
+  padding-bottom: 30px;
+}
+
+.container-su {
+  padding: 16px 30px;
+}
+
+.radio {
+  display: flex;
+  justify-content: flex-start;
+  .radio-text {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    input {
+      width: auto;
+      margin: 15px;
+    }
+  }
+}

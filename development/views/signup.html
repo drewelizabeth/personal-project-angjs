@@ -1,1 +1,79 @@
-{{ test }}
+<div>
+
+  <!--header-->
+  <div class="home-page-top-section fixed-nav-bar">
+    <!--navbar-->
+    <header>
+      <nav>
+        <li ui-sref="home">Home</li>
+        <li ui-sref="signup">Sign Up</li>
+        <li ui-sref="login">Log In</li>
+      </nav>
+    </header>
+  </div>
+
+  <div class="su-full-wrap village-image-su">
+
+    <!--<div class="parall-su village-image-su intro-image-box-su">  intro-image-box -->
+    <div class="form-div-su">
+      <form class="sign-up-form" ng-submit="signup(newUser)">
+
+
+        <div class="sign-up-wrapper">
+
+          <div class="imgcontainer-su">
+            <img src="https://s-media-cache-ak0.pinimg.com/originals/dd/84/c2/dd84c202a0b9dc4980aff761483eb464.jpg" alt="Avatar" class="village-avatar">
+          </div>
+
+          <label><b>Firstname</b></label>
+          <input type="text" ng-model="newUser.firstname" placeholder="Enter Firstname" required>
+
+          <label><b>Lastname</b></label>
+          <input type="text" ng-model="newUser.lastname" placeholder="Enter Lastname" required>
+
+          <label><b>Username</b></label>
+          <input type="text" ng-model="newUser.username" placeholder="Enter Username" required>
+
+          <label><b>Password</b></label>
+          <input type="password" ng-model="newUser.password" placeholder="Enter Password" required>
+
+          <label><b>Area Code</b></label>
+          <input type="number" ng-model="newUser.zip" placeholder="Enter Area Code">
+
+          <br><strong>
+          <h3>If you sign up as a new mom requesting help or on behalf of a new mom, please complete the following:</h3>
+          </strong><br>
+
+          <label><b>Estimated Due Date</b></label>
+          <input type="date" ng-model="newUser.duedate" placeholder="Enter Due Date">
+
+
+          <label><b>Expecting multiples (twins, etc.)</b></label>
+          <div class="radio">
+            <div class="radio-text"><input type="radio" value="yes" ng-model="newUser.multiples">Yes</div>
+            <div class="radio-text"><input type="radio" value="no" ng-model="newUser.multiples">No</div>
+          </div><br>
+
+          <label><b>Already have children</b></label>
+          <div class="radio">
+            <div class="radio-text"><input type="radio" value="yes" ng-model="newUser.kids">Yes</div>
+            <div class="radio-text"><input type="radio" value="no" ng-model="newUser.kids">No</div>
+          </div>
+          <button type="submit">Submit</button>
+
+        </div>
+
+        <div class="container-su" style="background-color:#f1f1f1">
+          <button type="button" class="cancelbtn">Cancel</button>
+        </div>
+
+      </form>
+    </div>
+    <!--</div>-->
+
+  </div>
+
+
+
+</div>
+</div>
