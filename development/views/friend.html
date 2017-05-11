@@ -4,7 +4,7 @@
   <div class="loggedin-nav-bar">
     <header>
       <div class="img-box">
-        <img src="https://i.stack.imgur.com/w0e1N.png" ui-sref="home">
+        <a ui-sref="home"><img src="https://i.stack.imgur.com/w0e1N.png"></a>
       </div>
       <div class="column-align">
         <div class="loggedin-nav-title">
@@ -13,10 +13,10 @@
         <nav>
           <div class="loggedin-nav-tabs">
             <div>
-              <li style="font-size:30px"><a ui-sref="mom">Mom</a></li>
+              <li style="font-size:30px" ui-sref="mom">Mom</li>
             </div>
             <div class="friend">
-              <li style="font-size:30px"><a ui-sref="friend">Friend</></li>
+              <li style="font-size:30px" ui-sref="friend">Friend</li>
             </div>
           </div>
         </nav>
@@ -25,36 +25,63 @@
   </div>
 
   <!--body-->
-<div>
-<div>
-</div>
-</div>
 
-<div class="loggedin-wrap">
-{{test}}
-  <div class="friend-map">
-    <div class="title">
-      <h3>Friends I've Helped</h3>
+  <div class="friend-wrap">
+    <div class="inner-wrap">
+      <div class="title">
+        <h3>Friends I've Helped</h3>
+      </div>
+      <div class="content">
+
+      </div>
+
     </div>
-    <div class="map">
+
+    <div class="break-line"></div>
+
+    <div class="inner-wrap">
+      <div class="title">
+        <h3>Mommin' Aint Easy So Help a Mother Out</h3>
+      </div>
+      <div class="search-bar">
+        <input type="text">
+      </div>
+      <div class="content">
+        <div class="col-content">
+          <div class="money">
+            <div class="title">
+              <p>Donate towards her wishlist</p>
+            </div>
+            <div class="graphics">
+              <div class="graph"></div>
+              <div class="amount">
+                <button class="donate-button">Click here to make donation</button>
+              </div>
+            </div>
+          </div>
+          <div class="time">
+            <div class="volunteer">
+              <div class="title">
+                <p>Sign up to:</p>
+              </div>
+              <div class="donate-list">
+                <ul>
+                  <li>deliver meals</li>
+                  <li>walk the dog</li>
+                  <li>babysit</li>
+                  <li>oragnize movie night</li>
+                  <li>and more...</li>
+                </ul>
+              </div>
+              <div class=- "calendar-button-wrap">
+                <button class="calendar-button">Click to view calendar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
     </div>
 
   </div>
-
-  <div class="friend-donate">
-    <div class="title">
-      <h3>Mommin' Aint Easy So Help a Mother Out</h3>
-    </div>
-    <div class="search-bar">
-
-    </div>
-    <div class="submit-box">
-      <div class="money"></div>
-      <div class="time"></div>
-    </div>
-
-  </div>
-
-</div>
 </div>
