@@ -25,6 +25,10 @@ app.post('/newuser', serverCtrl.newUser);
 
 app.post('/api/login', serverCtrl.login);
 
+app.post('/api/connections', serverCtrl.connectFriends);
+
+app.put('/api/updateconnect', serverCtrl.updateConnect);
+
 
 
 

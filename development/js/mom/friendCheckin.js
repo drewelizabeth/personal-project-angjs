@@ -1,7 +1,7 @@
-angular.module('App').directive('checkIn', function () {
+angular.module('App').directive('friendCheckin', function () {
   return {
     restrict: 'E',
-    templateUrl: './../../views/momCheckin.html',
+    templateUrl: './../../views/friendCheckin.html',
     controller: function ($scope, mainService) {
       $scope.conditions = [
         'single parenting',
@@ -16,17 +16,18 @@ angular.module('App').directive('checkIn', function () {
         'multiples',
         'special needs child'
       ];
-      $scope.checkin = [];
+
+$scope.connect = [];
       $scope.checked = function (condition) {
-        if ($scope.checkin.indexOf(condition) === -1) {
-          $scope.checkin.push(condition)
-          console.log($scope.checkin)
-          mainService.connectFriends($scope.checkin);
+        if ($scope.connect.indexOf(condition) === -1) {
+          $scope.connect.push(condition)
+          console.log($scope.connect)
+          mainService.initialConnect($scope.connect);
         } else {
-          $scope.checkin.splice($scope.checkin.indexOf(condition), 1)
-          console.log($scope.checkin)
-          if ($scope.checkin.length !== 0) {
-            mainService.connectFriends($scope.checkin);
+          $scope.connect.splice($scope.connect.indexOf(condition), 1)
+          console.log($scope.connect)
+          if ($scope.connect.length !== 0) {
+            mainService.initialConnect($scope.connect);
           } else {
             // clear out array friends so none display
           }

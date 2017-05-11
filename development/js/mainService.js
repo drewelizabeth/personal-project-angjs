@@ -25,6 +25,29 @@ const baseUrl = 'http://localhost:3000/'
       return response;
     })
   alert("incorrect username and password");
-  };
+};
+
+this.connectFriends = function(checked) {
+  console.log(checked);
+  return $http({
+    method: 'POST',
+    url: '/api/connections',
+    data: {checked}
+  }).then(function(response) {
+    return response;
+  });
+
+this.initialConnect = function(connect) {
+  console.log(connect);
+  return $http({
+    method: 'PUT',
+    url: '/api/updateconnect',
+    data: {connect}
+  }).then(function(response) {
+    return response;
+  })
+}
+
+  }
 
 })

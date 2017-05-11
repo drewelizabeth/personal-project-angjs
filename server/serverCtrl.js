@@ -33,11 +33,22 @@ module.exports = {
           res.send('User not found');      
       } else {
         delete response.password;
+        req.session.user = response[0]
+        console.log(req.session)
         res.status(200).send(response);
       }
     }
   })
-  }
+},
 
+connectFriends (req,res){
+  console.log(req.body, req.session.user);
+  res.status(200).send('yay');
+},
+
+updateConnect (req, res) {
+  console.log(req.body);
+  res.status(200).send('update');
+}
 
 };

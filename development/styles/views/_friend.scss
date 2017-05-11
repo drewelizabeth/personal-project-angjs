@@ -173,6 +173,26 @@
     background-color: red;
     padding: 5px;
     margin-top: 5%;
+    display: flex;
+    justify-content: center;
   }
 }
 
+.calendar-button {
+  width: 60%;
+}
+
+.checkin-instructions {
+  text-align: center;
+}
+
+.friend-message {
+  width: 80%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  textarea {
+    margin-left: 20%;
+  }
+}
