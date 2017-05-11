@@ -30,5 +30,5 @@ app.post('/api/login', serverCtrl.login);
 
 app.listen(3000, function() {
   console.log('Personal Project running on 3000');
-})
+});
 

@@ -77,13 +77,13 @@
 }
 
 .right {
-  padding: 29% 10% 29% 70%;
+  padding: 22% 10% 22% 70%;
   background-position: 0% 50%;
   overflow: hidden;
 }
 
 .left {
-  padding: 30% 70% 30% 10%;
+  padding: 22% 70% 22% 10%;
   background-position: 100% 50%;
   overflow: hidden;
 }
@@ -104,7 +104,7 @@
 
 .intro-image-text {
   color: white;
-  padding: 32% 17%;
+  padding: 25% 17%;
   font-weight: 600;
   text-align: center;
   display: flex;
@@ -129,7 +129,7 @@
 // }
 
 .parall-img1 {
-    background-size: 60% 100%;
+  background-size: 60% 100%;
   background-image: url('https://images.pexels.com/photos/35666/cooking-baby-only-kitchen.jpg?w=940&h=650&auto=compress&cs=tinysrgb');
 }
 
@@ -188,6 +188,11 @@
   justify-content: space-around;
   align-items: center;
 }
+
+.new-padding {
+  padding: 20% 17%;
+}
+
 
 // @media only screen and (max-device-width: 1024px) {
 //     .parallax {

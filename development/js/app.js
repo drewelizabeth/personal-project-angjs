@@ -19,11 +19,6 @@ angular.module('App', ['ui.router'])
                controller: 'loginCtrl',
                url: '/login'
            })
-           .state('loggedin', {
-               templateUrl: './views/loggedin.html',
-               controller: 'loggedinCtrl',
-               url: '/loggedin'
-           })
            .state('mom', {
                templateUrl: './views/mom.html',
                controller: 'momCtrl',
