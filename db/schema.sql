@@ -10,11 +10,25 @@ create table users (
   kids boolean
 )
 
+create table conditions (
+  id serial primary key,
+  name varchar(50)
+)
 
--- create table momdetails (
---   id serial primary key,
---   duedate date,
---   multiples boolean,
---   kids boolean,
---   id integer references users(id)
--- )
+create table connections (
+  id serial primary key,
+  mom_id integer references users(id),
+  friend_id integer references users(id)
+)
+
+create table mom_condition (
+  id serial primary key,
+  mom_id integer references users(id),
+  cond_id integer references conditions(id)
+)
+
+create table friend_condition (
+  id serial primary key,
+  friend_id integer references users(id),
+  cond_id integer references conditions(id)
+)

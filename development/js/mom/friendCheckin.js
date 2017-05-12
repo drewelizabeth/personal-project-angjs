@@ -18,18 +18,17 @@ angular.module('App').directive('friendCheckin', function () {
       ];
 
 $scope.connect = [];
-      $scope.checked = function (condition) {
+      $scope.checkedfr = function (condition) {
         if ($scope.connect.indexOf(condition) === -1) {
           $scope.connect.push(condition)
           console.log($scope.connect)
-          mainService.initialConnect($scope.connect);
         } else {
           $scope.connect.splice($scope.connect.indexOf(condition), 1)
           console.log($scope.connect)
           if ($scope.connect.length !== 0) {
             mainService.initialConnect($scope.connect);
           } else {
-            // clear out array friends so none display
+            // clear out array of friends so none display
           }
         }
       }

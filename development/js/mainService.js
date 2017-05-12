@@ -36,6 +36,7 @@ this.connectFriends = function(checked) {
   }).then(function(response) {
     return response;
   });
+};
 
 this.initialConnect = function(connect) {
   console.log(connect);
@@ -45,9 +46,8 @@ this.initialConnect = function(connect) {
     data: {connect}
   }).then(function(response) {
     return response;
-  })
-}
+  });
+};
 
-  }
 
 })
