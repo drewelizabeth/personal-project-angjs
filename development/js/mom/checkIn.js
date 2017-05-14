@@ -21,7 +21,7 @@ angular.module('App').directive('checkIn', function () {
       $scope.checked = function (condition) {
         if ($scope.checkin.indexOf(condition) === -1) {
           $scope.checkin.push(condition)
-          console.log($scope.checkin)
+          console.log('checkin array', $scope.checkin)
           mainService.connectFriends(condition).then(function(response) {
             console.log(response); 
             if (response.length === 0) {

@@ -41,13 +41,11 @@ module.exports = {
   })
 },
 
-connectFriends (req,res){
-  console.log(req.body, req.session.user);
+connectFriends (req,res) {
+  console.log('req.body', req.body, req.session.user);
   db.select_friends([req.session.user.id, req.body.condition], function(err, response) {
     res.status(200).send(response);
   })
-
-  // res.status(200).send('yay');
 },
 
 updateConnect (req, res) {
