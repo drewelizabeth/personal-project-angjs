@@ -41,11 +41,13 @@ module.exports = {
   })
 },
 
-connectFriends (req,res) {
+connectFriends (req,res){
   console.log('req.body', req.body, req.session.user);
-  db.select_friends([req.session.user.id, req.body.condition], function(err, response) {
+  console.log(req.session.user.id, req.body.checked);
+  db.select_friends([req.session.user.id, req.body.checked], function(err, response) {
+    console.log('serverCtrl', response);
     res.status(200).send(response);
-  })
+  });
 },
 
 updateConnect (req, res) {
