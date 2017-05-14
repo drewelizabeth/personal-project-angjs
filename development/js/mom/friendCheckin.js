@@ -17,22 +17,37 @@ angular.module('App').directive('friendCheckin', function () {
         'special needs child'
       ];
 
-$scope.connect = [];
-      $scope.checkedfr = function (condition) {
-        if ($scope.connect.indexOf(condition) === -1) {
-          $scope.connect.push(condition)
-          console.log($scope.connect)
+      $scope.connectfr = [];
+
+      
+      
+      $scope.checked2 = function (condition) {
+        console.log('input conditions', condition);
+        console.log('before' + $scope.connectfr);
+        if ($scope.connectfr.indexOf(condition) === -1) {
+          $scope.connectfr.push(condition);
+          console.log($scope.connectfr);
         } else {
-          $scope.connect.splice($scope.connect.indexOf(condition), 1)
-          console.log($scope.connect)
-          if ($scope.connect.length !== 0) {
-            mainService.initialConnect($scope.connect);
-          } else {
-            // clear out array of friends so none display
-          }
+          $scope.connectfr.splice($scope.connectfr.indexOf(condition), 1)
+          console.log($scope.connectfr)
+          // if ($scope.connectfr.length !== 0) {
+          //   mainService.initialConnect($scope.connectfr);
+          // } else {
+          //   // clear out array of friends so none display
+          // }
         }
       }
 
+      $scope.checkedfr = function() {
+        console.log($scope.connectfr);
+        mainService.friendUpdate($scope.connectfr);
+      }
+
+
     }
+
+
   }
+
+
 })

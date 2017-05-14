@@ -1,3 +1,9 @@
+// Publishable
+// pk_test_2D5DxWcgjehqxAcKTVKGhUn5
+	
+// Secret
+// sk_test_Lj8VYJMQ2DuC6VUwPjpeHvkj
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
@@ -5,7 +11,11 @@ const massive = require('massive');
 const session = require('express-session');
 const config = require('./../config.js');
 
+// const keyPublishable = process.env.PUBLISHABLE_KEY;
+// const keySecret = process.env.SECRET_KEY;
+
 const app = module.exports = express();
+// const stripe = require('stripe')('sk_test_Lj8VYJMQ2DuC6VUwPjpeHvkj');
 
 var corsOptions = {
   origin: 'http://localhost:3000'
@@ -29,6 +39,25 @@ app.post('/api/connections', serverCtrl.connectFriends);
 
 app.put('/api/updateconnect', serverCtrl.updateConnect);
 
+// app.get("/", (req, res) =>
+//   res.render("index.pug", {keyPublishable}));
+
+// app.post("/charge", (req, res) => {
+//   let amount = 500;
+
+//   stripe.customers.create({
+//      email: req.body.stripeEmail,
+//     source: req.body.stripeToken
+//   })
+//   .then(customer =>
+//     stripe.charges.create({
+//       amount,
+//       description: "Sample Charge",
+//          currency: "usd",
+//          customer: customer.id
+//     }))
+//   .then(charge => res.render("charge.pug"));
+// });
 
 
 

@@ -29,6 +29,7 @@
   // flex-direction: column;
   position: fixed;
   z-index: 1;
+  font-family: 'Montserrat', sans-serif;
   header {
     height: 8vh;
     padding-top: 15px;
@@ -103,6 +104,7 @@
     font-size: 30px;
     padding-top: 3%;
     padding-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
     // font-weight: 100;
   }
   .content {
@@ -204,4 +206,24 @@
   textarea {
     margin-left: 20%;
   }
+}
+
+.friend-checkin-button {
+  width: 50%;
+  height: 2%;
+}
+
+.friend-checkin-button-div {
+  display: flex;
+  justify-content: center;
+  height: 5%;
+}
+
+.montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.graphics {
+  width: 90%;
+  height: 80%;
 }

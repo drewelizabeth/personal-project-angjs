@@ -28,17 +28,18 @@ const baseUrl = 'http://localhost:3000/'
 };
 
 this.connectFriends = function(checked) {
-  console.log(checked);
+  console.log('mainService', checked);
   return $http({
     method: 'POST',
     url: '/api/connections',
     data: {checked}
   }).then(function(response) {
-    return response;
+    console.log(response);
+    return response.data;
   });
 };
 
-this.initialConnect = function(connect) {
+this.friendUpdate = function(connect) {
   console.log(connect);
   return $http({
     method: 'PUT',

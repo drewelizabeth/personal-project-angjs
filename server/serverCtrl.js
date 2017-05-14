@@ -43,12 +43,16 @@ module.exports = {
 
 connectFriends (req,res){
   console.log(req.body, req.session.user);
-  res.status(200).send('yay');
+  db.select_friends([req.session.user.id, req.body.condition], function(err, response) {
+    res.status(200).send(response);
+  })
+
+  // res.status(200).send('yay');
 },
 
 updateConnect (req, res) {
   console.log(req.body);
-  res.status(200).send('update');
+  res.status(200).send('updated');
 }
 
 };

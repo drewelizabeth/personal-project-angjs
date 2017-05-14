@@ -55,16 +55,28 @@
             <div class="graphics">
               <div class="graph"></div>
               <div class="amount">
-                <button class="donate-button">Click here to make donation</button>
+                <button class="donate-button montserrat">Click here to make donation</button>
+                <form action="/charge" method="POST">
+                  <script src="https://checkout.stripe.com/checkout.js" 
+                  class="stripe-button" data-key="pk_test_2D5DxWcgjehqxAcKTVKGhUn5" 
+                  data-amount="999"
+                    data-name="donation"
+                    data-description="you are a good friend"
+                    data-locale="auto" 
+                    data-zip-code="true" 
+                    data-label="Make a Donation">
+                  </script>
+                </form>
               </div>
             </div>
+            <graphics-stripe></graphics-stripe>
           </div>
           <div class="time">
             <div class="volunteer">
               <div class="title">
                 <p>Sign up to:</p>
               </div>
-              <div class="donate-list">
+              <div class="donate-list montserrat">
                 <ul>
                   <li>deliver meals</li>
                   <li>walk the dog</li>
@@ -74,7 +86,7 @@
                 </ul>
               </div>
               <div class="calendar-button-wrap">
-                <button class="calendar-button">Click to view calendar</button>
+                <button class="calendar-button montserrat">Click to view calendar</button>
               </div>
             </div>
           </div>
@@ -87,28 +99,30 @@
 
     <div class="inner-wrap">
       <div class="title-wrap">
-        <div class="title">
+        <div class="title" style="padding-top: 7%">
           <h3>Connect with Moms through Shared Experiences</h3>
         </div>
         <div class="joy-quote">
           <p class="quote">Shared joy is double joy, shared sorrow is half sorrow.</p>
-          <p class="credit">Swedish Proverb</p>
+          <p class="credit ">Swedish Proverb</p>
         </div>
       </div>
-      <div class="content">
-<div class="col-content">
+      <div class="content" style="height: 62vh">
+        <div class="col-content">
           <div class="money">
-            <div class="title">
+            <div class="title" style="padding-bottom: 5px;">
               <p>Checklist of Experiences</p>
             </div>
-            <div class="checkin-instructions">
+            <div class="checkin-instructions montserrat">
               <p>Only check experiences you are willing to share with others.</p><br>
-              <p>If a mom you are connected with also checks a similar experience, your name will be sent to her as someone she can reach out to for support.</p>
+              <p>If a mom you are connected with also checks a similar experience, your name will be sent to her as someone
+                she can reach out to for support.</p>
             </div>
             <div class="graphics">
               <div class="graph"></div>
               <div class="amount">
-                <br><friend-checkin></friend-checkin>
+                <br>
+                <friend-checkin></friend-checkin>
               </div>
             </div>
           </div>

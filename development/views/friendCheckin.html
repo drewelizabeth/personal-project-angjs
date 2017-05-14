@@ -1,8 +1,10 @@
-<div class="checkin-wrap">
+<div class="checkin-wrap montserrat">
   <label ng-repeat="condition in conditions">
-  <input type="checkbox" checklist-model="connect.conditions" checklist-value="condition">
+  <input type="checkbox" checklist-model="connectfr.conditions" checklist-value="condition" ng-click="checked2(condition)">
   {{ condition }}
   <br> 
 </label>
-<button class="friend-checkin-button" ng-click="checkedfr(condition)">Submit</button>
+<div class="friend-checkin-button-div">
+<button class="friend-checkin-button" ng-click="checkedfr()">Submit</button>
+</div>
 </div>

@@ -58,7 +58,7 @@
             <div class="title">
               <p>Check all items that sound wonderful to you:</p>
             </div>
-            <div class="graphics">
+            <div class="mom-graphics">
               <div class="checklist"></div>
 
             </div>
@@ -106,9 +106,13 @@
               <div class="title">
                 <p>Friends who have experienced something similar and would love to connect with you:</p>
               </div>
-              <div class="list">
-                <div class="names">
-
+              <div class="list" style='display: flex; flex-direction: column; overflow: scroll'>
+                <div class="names" ng-repeat="result in results">
+                  <h6>{{ result.condition }}</h6>
+                  <ul>
+                    <li ng-repeat="friend in result.friends">{{ friend }}</li>
+                  </ul>
+                  <hr>
                 </div>
               </div>
 

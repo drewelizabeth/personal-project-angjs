@@ -15,7 +15,8 @@
     <div class="form-div">
       <form class="form" ng-submit="login(user)">
         <div class="imgcontainer">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTfQHz5SlajCOKBfq4Jmv1YZXsrOHXXinSv-jXoTnAJ-DPk3fy0wGpxxo" alt="Avatar" class="avatar">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTfQHz5SlajCOKBfq4Jmv1YZXsrOHXXinSv-jXoTnAJ-DPk3fy0wGpxxo"
+            alt="Avatar" class="avatar">
         </div>
 
         <div class="container">
@@ -25,7 +26,9 @@
           <label><b>Password</b></label>
           <input type="password" ng-model="user.password" placeholder="Enter Password" required>
 
-          <button type="submit">Login</button>
+          <div>
+            <button type="submit">Login</button>
+          </div>
           <input type="checkbox" checked="checked"> Remember me
         </div>
 
