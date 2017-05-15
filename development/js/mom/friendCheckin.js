@@ -38,15 +38,15 @@ angular.module('App').directive('friendCheckin', function () {
         }
       }
 
-      $scope.checkedfr = function() {
-        console.log($scope.connectfr);
-        mainService.friendUpdate($scope.connectfr);
+      $scope.checkedfr = function(condition) {
+        // console.log($scope.connectfr);
+        // mainService.friendUpdate($scope.connectfr);
+        $scope.connectfr = [];
+        // $('input[type="checkbox"]:checked').prop('checked',false);
+      
       }
 
-
     }
-
-
   }
 
 

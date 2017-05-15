@@ -12,13 +12,10 @@
         </div>
         <nav>
           <div class="loggedin-nav-tabs">
-            <div class="momtab" ng-click="changeColor()" ng-show="momhide">
+            <div class="momtab">
               <li style="font-size:30px" ui-sref="mom">Mom</li>
             </div>
-            <div class="momtabclicked" ng-show="selectmom" ng-click="changeColor()">
-              <li style="font-size:30px" ui-sref="mom">Mom</li>
-            </div>
-            <div class="friend">
+            <div class="friendselect">
               <li style="font-size:30px" ui-sref="friend">Friend</li>
             </div>
           </div>
@@ -81,11 +78,11 @@
               </div>
               <div class="donate-list montserrat">
                 <ul>
-                  <li>deliver meals</li>
-                  <li>walk the dog</li>
-                  <li>babysit</li>
-                  <li>oragnize movie night</li>
-                  <li>and more...</li>
+                  <li>deliver meals</li><br>
+                  <li>walk the dog</li><br>
+                  <li>babysit</li><br>
+                  <li>oragnize movie night</li><br>
+                  <li>and more...</li><br>
                 </ul>
               </div>
               <div class="calendar-button-wrap">
@@ -121,7 +118,7 @@
               <p>If a mom you are connected with also checks a similar experience, your name will be sent to her as someone
                 she can reach out to for support.</p>
             </div>
-            <div class="graphics">
+            <div class="graphics no-padding">
               <div class="graph"></div>
               <div class="amount">
                 <friend-checkin></friend-checkin>
