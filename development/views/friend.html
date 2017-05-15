@@ -32,7 +32,17 @@
         <h3>Friends I've Helped</h3>
       </div>
       <div class="content map-background">
-        <div class=""></div>
+          <iframe
+  width="600"
+  height="450"
+  frameborder="0" style="border:0"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDzhmu5SaDOO5ZpSaJTAPy1O_B5XDozlF0
+    &q=WY+CA+OR" allowfullscreen>
+</iframe>
+       
+        <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBszQtrWjMM7fL64BtfEY0dQnIEo5_xdoc&callback=initMap"
+    async defer></script>-->
+      
       </div>
 
     </div>
@@ -44,7 +54,9 @@
         <h3>Mommin' Aint Easy So Help a Mother Out</h3>
       </div>
       <div class="search-bar">
-        <input type="text">
+        <input type="text" placeholder="Search by name" ng-model="momSearch">
+
+        
       </div>
       <div class="content">
         <div class="col-content">
@@ -52,8 +64,10 @@
             <div class="title">
               <p>Donate towards her wishlist</p>
             </div>
-            <div class="graphics">
-              <div class="graph"></div>
+            <div class="graphics low-padding">
+              <div class="search-results" ng-repeat="name in names | filter: momSearch">
+                {{ name }}
+              </div>
               <div class="amount">
                 <button class="donate-button montserrat">Click here to make donation</button>
                 <!--<form action="/charge" method="POST">

@@ -1,6 +1,5 @@
 angular.module('App').service('mainService', function($http) {
 
-const baseUrl = 'http://localhost:3000/'
   
   //sign up by posting new user
   this.newUser = function(newUser) {
@@ -50,5 +49,34 @@ this.friendUpdate = function(connect) {
   });
 };
 
+this.serviceCost = function(services) {
+  console.log('services', services);
+  return $http({
+    method: 'POST',
+    url: '/api/servicecost',
+    data: {services}
+  }).then(function(response) {
+    console.log('service', response);
+    return response;
+  });
+};
+
+// this.getMomNames = function(search){
+//   return $http({
+//     method: 'GET',
+//     url: '/api/getnames'
+//   }).then(function(response) {
+//     console.log(response.data);
+//     let sentNames = [];
+//     // let beforeNames = [];
+//     // beforeNames.push(response.data);
+//     // console.log(beforeNames);
+//     for (let i = 0; i < response.data.length; i++) {
+//       sentNames.push(response.data[i].first_name);
+//       console.log(sentNames)
+//     }
+//     return sentNames;
+//   })
+// };
 
 })

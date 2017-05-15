@@ -1,4 +1,4 @@
-angular.module('App').controller('friendCtrl', function($scope) {
+angular.module('App').controller('friendCtrl', function($scope, mainService) {
   
   // $scope.momhide = false;
   // $scope.selectmom = true;
@@ -7,6 +7,5 @@ angular.module('App').controller('friendCtrl', function($scope) {
   //   $scope.momhide = false;
   //   $scope.selectmom = true;
   // }
-    
-  
+//  $scope.names = mainService.getMomNames();
 })

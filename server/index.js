@@ -11,6 +11,10 @@ const massive = require('massive');
 const session = require('express-session');
 const config = require('./../config.js');
 const d3 = require("d3");
+// const Chart = require('chart.js');
+// var myChart = new Chart({donations});
+// var ctx = "myChart";
+
 // const mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
  
 // mapboxgl.accessToken = 'pk.eyJ1IjoiZHJld2VsaXphYmV0aCIsImEiOiJjajJwbTRhMzQwMnB3MzNudzQ4NGVieW56In0.W4netTs3XWHy2aZvpNwHRQ';
@@ -19,8 +23,8 @@ const d3 = require("d3");
 // style: 'mapbox://styles/mapbox/light-v9'
 // });
 
-// const keyPublishable = process.env.PUBLISHABLE_KEY;
-// const keySecret = process.env.SECRET_KEY;
+const keyPublishable = process.env.PUBLISHABLE_KEY;
+const keySecret = process.env.SECRET_KEY;
 
 const app = module.exports = express();
 // const stripe = require('stripe')('sk_test_Lj8VYJMQ2DuC6VUwPjpeHvkj');
@@ -46,6 +50,10 @@ app.post('/api/login', serverCtrl.login);
 app.post('/api/connections', serverCtrl.connectFriends);
 
 app.put('/api/updateconnect', serverCtrl.updateConnect);
+
+app.get('/api/getnames', serverCtrl.getnames);
+
+app.post('/api/servicecost', serverCtrl.serviceCost);
 
 // app.get("/", (req, res) =>
 //   res.render("index.pug", {keyPublishable}));

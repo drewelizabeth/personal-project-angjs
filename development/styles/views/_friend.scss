@@ -34,7 +34,7 @@
     height: 8vh;
     padding-top: 15px;
     padding-bottom: 16px;
-    background-color: rgb(121,189,154);
+    background-color: rgb(121, 189, 154);
     position: relative;
     display: flex;
     flex-direction: row;
@@ -63,14 +63,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgb(121,189,154);
-  
+  background-color: rgb(121, 189, 154);
 }
 
 .loggedin-nav-title {
   font-size: 20px;
   margin-top: 30px;
-
 }
 
 .loggedin-nav-tabs {
@@ -80,19 +78,20 @@
   margin-top: 15px;
   margin-bottom: 25px;
   padding-right: 10%;
-  background-color: rgb(121,189,154);
+  background-color: rgb(121, 189, 154);
   margin-bottom: 0;
   .friend {
     margin-left: 50%;
-    background-color: rgb(121,189,154);
+    background-color: rgb(121, 189, 154);
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     margin-bottom: 0;
     cursor: pointer;
   }
   .momtab {
-    background-color: rgb(121,189,154);
+    background-color: rgb(121, 189, 154);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -101,29 +100,29 @@
 }
 
 .friendselect {
-   margin-left: 50%;
-    background-color: white;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 0;
-    color: purple;
-    cursor: pointer;
+  margin-left: 50%;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+  color: purple;
+  cursor: pointer;
 }
 
 .momtabselect {
-    background-color: white;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    color: purple;
-    cursor: pointer;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: purple;
+  cursor: pointer;
 }
 
 .break-line {
   width: 100%;
   height: 3vh;
-  background-color: rgb(121,189,154);
+  background-color: rgb(121, 189, 154);
 }
 
 .friend-wrap {
@@ -142,11 +141,10 @@
     font-size: 30px;
     padding-top: 3%;
     padding-bottom: 20px;
-    font-family: 'Montserrat', sans-serif;
-    // font-weight: 100;
+    font-family: 'Montserrat', sans-serif; // font-weight: 100;
   }
   .content {
-    background-color: rgba(239,229,250,.7);
+    background-color: rgba(239, 229, 250, .7);
     width: 85%;
     height: 60vh;
     margin: 3%;
@@ -157,13 +155,12 @@
 .search-bar {
   width: 100%;
   height: 100%;
-  margin-top: 1%;
-  // background-color: blue;
+  margin-top: 1%; // background-color: blue;
   display: flex;
   justify-content: center;
   input {
     width: 50%;
-    height: 100%;
+    height: 60%;
     font-size: 18px;
   }
 }
@@ -177,7 +174,7 @@
 .money {
   width: 45%;
   padding: 7px;
-  margin-left:3px;
+  margin-left: 3px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -197,7 +194,7 @@
 }
 
 .volunteer {
-  background-color: rgba(239,229,250,.1);
+  background-color: rgba(239, 229, 250, .1);
   width: 100%;
   height: 98%;
   display: flex;
@@ -215,8 +212,7 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    font-size: 20px;
-    // background-color: blue;
+    font-size: 20px; // background-color: blue;
     margin-top: 5px;
     padding: 5px;
   }
@@ -231,13 +227,12 @@
 
 .calendar-button {
   width: 40%;
-  background-color:rgb(54,23,61);
+  background-color: rgb(54, 23, 61);
 }
 
 .checkin-instructions {
   text-align: center;
-  padding-top: 4%;
-  // background-color: red;
+  padding-top: 4%; // background-color: red;
 }
 
 .friend-message {
@@ -254,14 +249,14 @@
 .friend-checkin-button {
   width: 50%;
   height: 2%;
-  background-color:rgb(54,23,61);
+  background-color: rgb(54, 23, 61);
 }
 
 .friend-checkin-button-div {
   display: flex;
   justify-content: center;
   height: 5%;
-  padding-top: 4%;  
+  padding-top: 4%;
 }
 
 .montserrat {
@@ -278,5 +273,34 @@
 }
 
 .donate-button {
-  background-color:rgb(54,23,61);
+  background-color: rgb(54, 23, 61);
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+.graphics {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-results {
+  background-color: white;
+  width: 80%;
+  height: 65%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-radius: 5px;
+  font-family: 'Indie Flower', cursive;
+  font-size: 20px;
+  margin-bottom: 8%;
+}
+
+.low-padding {
+  padding-top: 0;
 }

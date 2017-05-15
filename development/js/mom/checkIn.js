@@ -52,7 +52,7 @@ angular.module('App').directive('checkIn', function () {
             }
           }
         }
-      }
+      };
 
     }
   }

@@ -32,3 +32,10 @@ create table friend_condition (
   friend_id integer references users(id),
   cond_id integer references conditions(id)
 )
+
+create table services (
+  id serial primary key,
+  service varchar(50),
+  cost integer
+  
+)
