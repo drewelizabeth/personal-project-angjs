@@ -4,13 +4,13 @@ angular.module('App').directive('checkIn', function () {
     templateUrl: './../../views/momCheckin.html',
     controller: function ($scope, mainService) {
       $scope.conditions = [
-        'single parenting',
+        'single parent',
         'infertility',
         'miscarriage',
         'breastfeeding',
         'formula feeding',
-        'being stay-at-home-mom',
-        'being working mom',
+        'stay at home mom',
+        'working mom',
         'postpartum depression',
         'hyperemesis',
         'multiples',

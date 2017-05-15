@@ -12,7 +12,10 @@
         </div>
         <nav>
           <div class="loggedin-nav-tabs">
-            <div>
+            <div class="momtab" ng-click="changeColor()" ng-show="momhide">
+              <li style="font-size:30px" ui-sref="mom">Mom</li>
+            </div>
+            <div class="momtabclicked" ng-show="selectmom" ng-click="changeColor()">
               <li style="font-size:30px" ui-sref="mom">Mom</li>
             </div>
             <div class="friend">
@@ -31,8 +34,8 @@
       <div class="title">
         <h3>Friends I've Helped</h3>
       </div>
-      <div class="content">
-
+      <div class="content map-background">
+        <div class=""></div>
       </div>
 
     </div>
@@ -121,7 +124,6 @@
             <div class="graphics">
               <div class="graph"></div>
               <div class="amount">
-                <br>
                 <friend-checkin></friend-checkin>
               </div>
             </div>
