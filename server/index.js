@@ -10,6 +10,14 @@ const cors = require('cors');
 const massive = require('massive');
 const session = require('express-session');
 const config = require('./../config.js');
+const d3 = require("d3");
+// const mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
+ 
+// mapboxgl.accessToken = 'pk.eyJ1IjoiZHJld2VsaXphYmV0aCIsImEiOiJjajJwbTRhMzQwMnB3MzNudzQ4NGVieW56In0.W4netTs3XWHy2aZvpNwHRQ';
+// var map = new mapboxgl.Map({
+// container: 'mapid',
+// style: 'mapbox://styles/mapbox/light-v9'
+// });
 
 // const keyPublishable = process.env.PUBLISHABLE_KEY;
 // const keySecret = process.env.SECRET_KEY;

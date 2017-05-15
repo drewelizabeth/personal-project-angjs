@@ -5,8 +5,8 @@ angular.module('App').controller('momCtrl', function($scope, quoteService) {
       $scope.quote = result.quote;
     $scope.author = result.author_name;
    });
-});
 
+$scope.googleMapsUrl="https://maps.googleapis.com/maps/api/js?key=AIzaSyApjP22hyTOtvz4l40FgNQ_OpMrMDlYSVU"
 
 
 //want to make random quote/friend message generator
@@ -21,3 +21,5 @@ angular.module('App').controller('momCtrl', function($scope, quoteService) {
 //             var ranNum = Math.floor(Math.random() * length);
 //             console.log("ranNum", ranNum);
 //             return result.[ranNum];
+
+});
