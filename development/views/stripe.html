@@ -1,0 +1,37 @@
+<div class="donation-form">
+<form ng-submit="charge(donation)">
+  <!--<div class="donation-amount">
+  <label>
+  <input type="radio" ng-model="five">$5
+  </label>
+  <label>
+  <input type="radio" ng-model="ten">$10
+  </label>
+  <label>
+  <input type="radio" ng-model="twenty">$20
+  </label>
+  <label>
+  <input type="radio" ng-model="fifty">$50
+  </label>
+<label>
+  <input type="radio" ng-model="other">Other
+  </label>
+  </div>-->
+  <div class="donation-title">
+    <h3>Enter donation amount and credit card info</h3>
+  </div>
+<div class="donation-info">
+   <input class="dollars" type="text" ng-model="amount" placeholder="$10.00">
+  <input class="name" type="text" placeholder="Name on card" ng-model="name">
+  <input class="card" type="text" ng-model="donation.card.number" placeholder="Enter credit card number">
+  <div class="donate-row">
+  <input class="date" type="text" ng-model="donation.card.exp_month" style="width: 45%;" placeholder=" Exp MM">
+  <input class="date" type="text" ng-model="donation.card.exp_year" style="width: 45%;"  placeholder=" Exp YY">
+  </div>
+  <input class="cvc" type="text" ng-model="donation.card.cvc" placeholder="CVC">
+  </div>
+  <div class="donate-button-wrap">
+  <button class="donate-button" type="submit" style="background-color:rgb(54, 23, 61)">Submit Donation</button>
+  </div>
+</form>
+</div>

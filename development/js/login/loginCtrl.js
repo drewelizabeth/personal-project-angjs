@@ -7,7 +7,7 @@ angular.module('App').controller('loginCtrl', function ($scope, mainService, $st
         mainService.login(userObj).then(function (response) {
             if (response.status == 200) {
               console.log("log in worked!");
-              $state.go('friend');
+              $state.go('mom');
             }
           })
         };

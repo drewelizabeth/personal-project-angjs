@@ -7,5 +7,7 @@ angular.module('App').controller('friendCtrl', function($scope, mainService) {
   //   $scope.momhide = false;
   //   $scope.selectmom = true;
   // }
-//  $scope.names = mainService.getMomNames();
+ $scope.names = mainService.getMomNames().then(function(response){
+   $scope.namesArray = response;
+ })
 })

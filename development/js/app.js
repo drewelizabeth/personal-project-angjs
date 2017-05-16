@@ -1,5 +1,7 @@
-angular.module('App', ['ui.router'])
-    .config(function($stateProvider, $urlRouterProvider) {
+angular.module('App', ['ui.router', 'angular-stripe'])
+    .config(function($stateProvider, $urlRouterProvider, stripeProvider) {
+        
+        stripeProvider.setPublishableKey('pk_test_2D5DxWcgjehqxAcKTVKGhUn5');
 
       $urlRouterProvider.otherwise('/');
 
@@ -28,6 +30,11 @@ angular.module('App', ['ui.router'])
                templateUrl: './views/friend.html',
                controller: 'friendCtrl',
                url: '/friend'
+           })
+           .state('success', {
+               templateUrl: './views/success.html',
+               controller: 'successCtrl',
+               url: '/success'
            })
         
  });

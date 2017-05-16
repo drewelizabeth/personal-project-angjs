@@ -2,28 +2,6 @@ angular.module('App').directive('servicesCost', function() {
   return {
     restrict: 'E',
     templateUrl: './../../views/services.html',
-    // link: function (scope, element, attrs) {
-    //         scope.expense = 0;
-    //         function (service) {
-    //             let total = 0;
-    //             console.log(service);
-    //             if( service === 'cleaning service') {
-    //               total += 100;
-    //             } else if (service === 'prenatal massage') {
-    //               total += 110;
-    //             } else if (service === 'postnatal massage') {
-    //               total += 120;
-    //             } else if (service === 'lactation consultant') {
-    //               total+= 200;
-    //             } else if (service === 'doula') {
-    //               total += 500;
-    //             }
-  
-    //             scope.expense = total;
-    //         }
-
-    //         element.on('click', wish(service));
-    //     },
     controller: function ($scope, mainService) {
       $scope.services = [
         'cleaning service',
@@ -35,8 +13,10 @@ angular.module('App').directive('servicesCost', function() {
         'manicure'
       ];
 
+$scope.expense = 0;
+
       $scope.wish = function(service) {
-         $scope.expense = 0;
+        //  $scope.expense = 0;
                 let total = 0;
                 console.log(service);
                 if( service === 'cleaning service') {

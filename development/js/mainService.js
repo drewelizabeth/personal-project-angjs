@@ -61,22 +61,22 @@ this.serviceCost = function(services) {
   });
 };
 
-// this.getMomNames = function(search){
-//   return $http({
-//     method: 'GET',
-//     url: '/api/getnames'
-//   }).then(function(response) {
-//     console.log(response.data);
-//     let sentNames = [];
-//     // let beforeNames = [];
-//     // beforeNames.push(response.data);
-//     // console.log(beforeNames);
-//     for (let i = 0; i < response.data.length; i++) {
-//       sentNames.push(response.data[i].first_name);
-//       console.log(sentNames)
-//     }
-//     return sentNames;
-//   })
-// };
+this.getMomNames = function(search){
+  return $http({
+    method: 'GET',
+    url: '/api/getnames'
+  }).then(function(response) {
+    console.log(response.data);
+    let sentNames = [];
+    // let beforeNames = [];
+    // beforeNames.push(response.data);
+    // console.log(beforeNames);
+    for (let i = 0; i < response.data.length; i++) {
+      sentNames.push(response.data[i].first_name);
+      console.log(sentNames)
+    }
+    return sentNames;
+  })
+};
 
 })

@@ -1,8 +1,3 @@
-// Publishable
-// pk_test_2D5DxWcgjehqxAcKTVKGhUn5
-	
-// Secret
-// sk_test_Lj8VYJMQ2DuC6VUwPjpeHvkj
 
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -11,6 +6,7 @@ const massive = require('massive');
 const session = require('express-session');
 const config = require('./../config.js');
 const d3 = require("d3");
+const stripe = require('stripe')('config.STRIPE_KEYS.secretKey');
 // const Chart = require('chart.js');
 // var myChart = new Chart({donations});
 // var ctx = "myChart";
@@ -27,7 +23,6 @@ const keyPublishable = process.env.PUBLISHABLE_KEY;
 const keySecret = process.env.SECRET_KEY;
 
 const app = module.exports = express();
-// const stripe = require('stripe')('sk_test_Lj8VYJMQ2DuC6VUwPjpeHvkj');
 
 var corsOptions = {
   origin: 'http://localhost:3000'
@@ -38,7 +33,11 @@ const massiveInstance = massive.connectSync({connectionString: 'postgres://postg
 app.use(bodyParser.json());
 app.use(cors(corsOptions));
 app.use(express.static(__dirname + './../dist'));
-app.use(session({ secret: config.sessionSecret }));
+app.use(session({ 
+  secret: config.sessionSecret,
+  resave: false,
+  saveUninitialized: false
+ }));
 app.set('db', massiveInstance);
 const serverCtrl = require('./serverCtrl');
 const db = app.get('db');
@@ -55,25 +54,13 @@ app.get('/api/getnames', serverCtrl.getnames);
 
 app.post('/api/servicecost', serverCtrl.serviceCost);
 
+app.post('/api/donation', serverCtrl.donation);
 // app.get("/", (req, res) =>
 //   res.render("index.pug", {keyPublishable}));
 
 // app.post("/charge", (req, res) => {
 //   let amount = 500;
 
-//   stripe.customers.create({
-//      email: req.body.stripeEmail,
-//     source: req.body.stripeToken
-//   })
-//   .then(customer =>
-//     stripe.charges.create({
-//       amount,
-//       description: "Sample Charge",
-//          currency: "usd",
-//          customer: customer.id
-//     }))
-//   .then(charge => res.render("charge.pug"));
-// });
 
 
 
